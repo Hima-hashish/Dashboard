@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dashboard">
+    <title>Settings</title>
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <!-- Font Awesome Library  -->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <!-- Framework File -->
+    <link rel="stylesheet" href="CSS/framework.css">
+    <!-- Main Css File -->
+    <link rel="stylesheet" href="CSS/settings.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="container df">
+        <aside class="bg-white p-20">
+            <h2 class="mt-0 pr text-c fs-20 mfs-14">Hima</h2>
+            <nav>
+                <ul>
+                    <li class="mb-10 br-6 tran-03"><a href="Index.html" class="mtext-c mb-5 p-10 db c-black"><i
+                                class="fa-solid fa-chart-bar fa-fw mr-5"></i>
+                            <span class="ml-5 mobile-none">Dashboard</span> </a></li>
+                    <li class="active mb-10 br-6 tran-03"><a href="#" class="mtext-c p-10 db c-black"><i
+                                class="fa-solid fa-gear fa-fw mr-5"></i>
+                            <span class="ml-5 mobile-none">Settings</span> </a>
+                    </li>
+                    <li class="mb-10 br-6 tran-03"><a href="profile.html" class="mtext-c p-10 db c-black"><i
+                                class="fa-solid fa-user fa-fw "></i>
+                            <span class="ml-5 mobile-none">Profile</span> </a>
+                    </li>
+                    <li class="mb-10 br-6 tran-03"><a href="projects.html" class="mtext-c df p-10 db c-black"><i
+                                class="fa-solid fa-diagram-project fa-fw mr-5"></i>
+                            <span class="ml-5 mobile-none">Projects</span> </a></li>
+                    <li class="mb-10 br-6 tran-03"><a href="courses.html" class="  p-10 db c-black"><i
+                                class="fa-solid fa-graduation-cap fa-fw mr-5"></i>
+                            <span class="mobile-none">Courses</span> </a></li>
+                    <li class="mb-10 br-6 tran-03"><a href="friends.html" class="mtext-c p-10 db c-black"><i
+                                class="fa-solid fa-user-group fa-fw mr-5"></i>
+                            <span class=" ml-5 mobile-none">Friends</span> </a></li>
+                    <li class=" br-6 mb-10 tran-03"><a href="files.html" class="mtext-c p-10 db c-black"><i
+                                class="fa-regular fa-file fa-fw mr-5"></i>
+                            <span class=" ml-5 mobile-none">Files</span> </a>
+                    </li>
+                    <li class=" br-6 mb-10 tran-03"><a href="plans.html" class="mtext-c p-10 db c-black"><i
+                                class="fa-regular fa-credit-card fa-fw mr-5"></i>
+                            <span class="ml-5 mobile-none">Plans</span> </a></li>
+                </ul>
+            </nav>
+        </aside>
+        <section class="w-f">
+            <!-- Start Header -->
+            <header class="df-b bg-white p-20">
+                <div class="search pr">
+                    <input class="br-10 p-10 pl-25 tran-03" type="search" name="search" placeholder="Type a keyword">
+                </div>
+                <div class="df second wf">
+                    <i class="fa-regular fa-bell pr fs-20 mr-10"></i>
+                    <img class="br-half" src="Media/Photos/profile.jpg" alt="Photo">
+                </div>
+            </header>
+            <!-- End Header -->
+            <!-- Start Settings Content -->
+            <section class="content p-20 mprl-10">
+                <h2 class="pr fs-30 mt-0">Settings</h2>
+                <section class="main-content dg-3 dg-m">
+                    <!-- Start Control -->
+                    <section class="control bg-white br-6 p-20 mfs-15">
+                        <h3 class="mt-0 mb-10 fs-25 mfs-20">Site Control</h3>
+                        <p class="c-gray textt-c fs-15 m-0 mfs-10 mb-20">Control the website if there is maintenance</p>
+                        <div class="genral df-b">
+                            <div>
+                                <p class="mb-5 mt-0">Website Control</p>
+                                <span class="m-0 db fs-13 c-gray mfs-10">Open/Close Website And Type The Reason</span>
+                            </div>
+                            <input class="op-cl tran-05 point pr mt-a" type="checkbox" aria-label="check" checked
+                                name="open">
+                        </div>
+                        <textarea class="w-f br-6 p-10 mt-20" name="message"
+                            placeholder="Close Message Content"></textarea>
+                    </section>
+                    <!-- End Control -->
+                    <!-- Start Info -->
+                    <section class="info bg-white br-6 p-20 mfs-15">
+                        <h3 class="mt-0 mb-10 fs-25 mfs-20">General Info</h3>
+                        <p class="c-gray textt-c fs-15 m-0 mfs-10 mb-20">General Information About Your Account</p>
+                        <form action="" method="post" class="df-dc">
+                            <label for="first" class="mb-10 c-gray"> First Name</label>
+                            <input type="text" class="br-6 p-10 " placeholder="First Name" name="first name" id="first">
+                            <label for="last" class="mt-10 mb-5 c-gray"> Last Name</label>
+                            <input type="text" class="mb-10 br-6 p-10 " placeholder="Last Name" name="last name"
+                                id="last">
+                            <div class="email df-dc">
+                                <label for="email" class="mb-5 c-gray">Email</label>
+                                <div class="mail df al-c w-f">
+                                    <input type="email" disabled class="br-6 p-10 w-f no-drop" value="h@mm.ib"
+                                        name="email" id="email">
+                                    <a href="#" class="c-blue ml-10">Change</a>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                    <!-- End Info -->
+                    <!-- Start Security -->
+                    <section class="security bg-white br-6 p-20 mfs-15">
+                        <h3 class="mt-0 mb-10 fs-25 mfs-20">Security Info</h3>
+                        <p class="c-gray textt-c fs-15 m-0 mfs-10 mb-20">Security Information About Your Account</p>
+                        <div class="info df-b al-c pb-20 mt-20">
+                            <div>
+                                <p class="mb-5 mt-0">Password</p>
+                                <span class="m-0 db fs-13 c-gray mfs-10">Last Change On 25/10/2021</span>
+                            </div>
+                            <a href="#" class="br-6 ptb-5 prl-10 c-white bg-blue tran-03">Change</a>
+                        </div>
+                        <div class="info df-b al-c pb-20 mt-20">
+                            <div>
+                                <p class="mb-5 mt-0">Two-Factor Authentication</p>
+                                <span class="m-0 db fs-13 c-gray mfs-10">Enable/Disable The Feature</span>
+                            </div>
+                            <input class="op-cl tran-05 point pr mt-a" type="checkbox" aria-label="check" checked
+                                name="open">
+                        </div>
+                        <div class="info df-b al-c mt-20">
+                            <div>
+                                <p class="mb-5 mt-0">Devices</p>
+                                <span class="m-0 db fs-13 c-gray mfs-10">Check The Login Devices List</span>
+                            </div>
+                            <a href="#" class="c-black br-6 ptb-5 prl-10 bg-e">Devices</a>
+                        </div>
+                    </section>
+                    <!-- End Security -->
+                    <!-- Start Social -->
+                    <section class="social bg-white br-6 p-20 mfs-15">
+                        <h3 class="mt-0 mb-10 fs-25 mfs-20">Social Info</h3>
+                        <p class="c-gray textt-c fs-15 m-0 mfs-10 mb-20">Social Media Information</p>
+                        <ul>
+                            <li class="df mb-20"><i class="fa-brands fa-twitter c-gray df-c tran-03"></i> <input
+                                    class="p-10 w-f" type="text" name="twitter" placeholder="Twitter Username"></li>
+                            <li class="df mb-20"><i class="fa-brands fa-facebook-f c-gray df-c tran-03"></i> <input
+                                    class="p-10 w-f" type="text" name="Facebook" placeholder="Facebook Username"></li>
+                            <li class="df mb-20"><i class="fa-brands fa-linkedin c-gray df-c tran-03"></i> <input
+                                    class="p-10 w-f" type="text" name="linkedin" placeholder="Linkedin Username"></li>
+                            <li class="df"><i class="fa-brands fa-youtube c-gray df-c tran-03"></i> <input
+                                    class="p-10 w-f" type="text" name="Youtube" placeholder="Youtube Username"></li>
+                        </ul>
+                    </section>
+                    <!-- End Social -->
+                    <!-- Start Widgets -->
+                    <section class="widgets bg-white br-6 p-20 mfs-15">
+                        <h3 class="mt-0 mb-10 fs-25 mfs-20">Widgets Control</h3>
+                        <p class="c-gray textt-c fs-15 m-0 mfs-10 mb-15">Show/Hide Widgets</p>
+                        <ul>
+                            <li class="mb-15 ptb-2 pr">
+                                <input class="point" type="checkbox" checked name="draft" id="draft">
+                                <label class="point pl-30" for="draft">Quick Draft</label>
+                            </li>
+                            <li class="mb-15 ptb-2 pr">
+                                <input class="point" type="checkbox" checked name="target" id="target">
+                                <label class="point pl-30" for="target">Yearly Targets</label>
+                            </li>
+                            <li class="mb-15 ptb-2 pr">
+                                <input class="point" type="checkbox" checked name="static" id="static">
+                                <label class="point pl-30" for="static">Tickets Statistics</label>
+                            </li>
+                            <li class="mb-15 ptb-2 pr">
+                                <input class="point" type="checkbox" checked name="news" id="news">
+                                <label class="point pl-30" for="news">Latest News</label>
+                            </li>
+                            <li class="mb-15 ptb-2 pr">
+                                <input class="point" type="checkbox" name="tasks" id="tasks">
+                                <label class="point pl-30" for="tasks">Latest Tasks</label></div>
+                            </li>
+                            <li class="pr ptb-2">
+                                <input class="point" type="checkbox" checked name="items" id="items">
+                                <label class="point pl-30" for="items">Top Search Items</label>
+                            </li>
+                        </ul>
+                    </section>
+                    <!-- End Widgets -->
+                    <!-- Start Backup -->
+                    <section class="backup bg-white br-6 p-20 mfs-15">
+                        <h3 class="mt-0 mb-10 fs-25 mfs-20">Backup Manager</h3>
+                        <p class="c-gray textt-c fs-15 m-0 mfs-10 mb-15">Control Backup Time And Location</p>
+                        <ul class="pb-20">
+                            <li class="mb-20 ptb-3 pr">
+                                <input class="point" type="radio" checked name="items" id="daily">
+                                <label class="point pl-25" for="daily">Daily</label>
+                            </li>
+                            <li class="mb-20 ptb-3 pr">
+                                <input class="point" type="radio" name="items" id="weekly">
+                                <label class="point pl-25" for="weekly">Weekly</label>
+                            </li>
+                            <li class="pr ptb-3">
+                                <input class="point" type="radio" name="items" id="monthly">
+                                <label class="point pl-25" for="monthly">Monthly</label>
+                            </li>
+                        </ul>
+                        <ul class="pt-5 dg-3r dg-mc ">
+                            <li>
+                                <input class="point" type="radio" name="plan" id="megaman">
+
+                                <label class="point text-c df-dcc w-f br-6 tran-03" for="megaman"><i
+                                        class="fa-solid fa-server mb-10"></i>Megaman</label>
+                            </li>
+                            <li>
+                                <input class="point" type="radio" checked name="plan" id="zero">
+
+                                <label class="point text-c df-dcc w-f br-6 tran-03" for="zero"><i
+                                        class="fa-solid fa-server mb-10"></i>Zero</label>
+                            </li>
+                            <li>
+                                <input class="point" type="radio" name="plan" id="sigma">
+                                <label class="point text-c df-dcc w-f br-6 tran-03" for="sigma">
+                                    <i class="fa-solid fa-server mb-10"></i>Sigma
+                                </label>
+                            </li>
+                        </ul>
+                    </section>
+                    <!-- End Backup -->
+                </section>
+            </section>
+            <!-- End Settings Content -->
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,388 @@
+/* Start Variables */
+:root {
+    --blue-color: #0075ff;
+    --blue-s-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;
+}
+
+/* End Variables */
+/* Start Components */
+.active {
+    background-color: #f6f6f6;
+}
+
+/* End Components */
+/* Start Scrollbar */
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--blue-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--blue-s-color);
+}
+
+/* End Scrollbar */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+::selection {
+    background-color: var(--blue-color);
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    min-height: 100vh;
+    background-color: #f1f5f9;
+}
+
+/* End Global Rules */
+/* Start Content */
+/* Start Sidebar  */
+.container aside {
+    width: 250px;
+    box-shadow: 0 0 10px #ddd;
+    z-index: 1;
+}
+
+.container aside h2 {
+    margin-bottom: 40px;
+}
+
+.container aside h2::before {
+    content: "";
+    position: absolute;
+    background: black;
+    width: 75px;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -15px;
+}
+
+.container aside h2::after {
+    content: "";
+    position: absolute;
+    background: black;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -24px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.container aside ul li:hover {
+    background-color: #f6f6f6;
+}
+
+@media (max-width:767px) {
+    .container aside {
+        padding: 5px;
+        width: 60px;
+    }
+
+    .container aside h2 {
+        margin-bottom: 15px;
+        margin-top: 20px;
+    }
+
+    .container aside h2::before,
+    .container aside h2::after {
+        display: none;
+    }
+
+    .container aside ul li i {
+        width: 100%;
+    }
+}
+
+/* End Sidebar  */
+/* Start Header */
+.container section header {
+    height: 70px;
+}
+
+@media (max-width: 767px) {
+    .container section header {
+        padding: 20px 15px;
+    }
+}
+
+.container section header .search::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f002";
+    font-weight: 900;
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    color: var(--grey-color);
+}
+
+.container section header input {
+    border: 1px solid #ccc;
+    width: 150px;
+}
+
+.container section header input:focus {
+    width: 180px;
+}
+
+.container section header input:focus::placeholder {
+    color: transparent;
+}
+
+@media (max-width: 767px) {
+    .container section header input {
+        width: 142px;
+        padding-right: 5px;
+    }
+
+    .container section header input:focus {
+        width: 160px;
+    }
+}
+
+.container section header .second img {
+    width: 30px;
+}
+
+.container section header .second i {
+    top: 50%;
+    transform: translateY(-25%);
+}
+
+.container section header .second i::after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--red-color);
+    right: -1px;
+    top: -5px;
+}
+
+/* End Header */
+/* Start Settings Content */
+.container .content h2::before,
+.container .content h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 4px;
+    border-radius: 6px;
+}
+
+.container .content h2::before {
+    background-color: white;
+    width: 140px;
+}
+
+.container .content h2::after {
+    background-color: black;
+    width: 50px;
+}
+
+/* Start Control */
+.container .main-content .control textarea {
+    resize: none;
+    height: 150px;
+    border: 1px solid #ccc;
+}
+
+/* End Control */
+/* Start Info */
+.container .main-content .info form input {
+    border: 1px solid #ccc;
+}
+
+.container .main-content .info form .email input {
+    background-color: #f0f4f8;
+    color: #bbb;
+}
+
+/* End Info */
+/* Start Security */
+.container .main-content .security .info:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+
+.container .main-content .security .info:first-of-type a:hover {
+    background-color: var(--blue-s-color);
+}
+
+/* End Security */
+/* Start Social */
+.container .main-content .social ul li i {
+    background-color: #f6f6f6;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 6px 0 0 6px;
+}
+
+.container .main-content .social ul li input {
+    background-color: #f6f6f6;
+    border: 1px solid #ccc;
+    border-radius: 0 4px 4px 0;
+}
+
+/* 
+.container .main-content .social ul li i:has(+ input:focus) {
+    color: black;
+} */
+
+.container .main-content .social ul li:focus-within i {
+    color: black;
+}
+
+/* End Social */
+/* Start Widgets */
+.container .main-content .widgets ul li input {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.container .main-content .widgets ul li label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 6px;
+    background: white;
+    border: 2px solid var(--grey-color);
+
+}
+
+.container .main-content .widgets ul li label:hover::before {
+    border: 2px solid var(--blue-color);
+}
+
+.container .main-content .widgets ul li input:checked+label::before {
+    border: 2px solid var(--blue-color);
+
+}
+
+.container .main-content .widgets ul li label::after {
+    content: "\f14a";
+    font-family: 'Font Awesome 6 Free';
+    font-size: 0;
+    border-radius: 6px;
+    font-weight: 900;
+    position: absolute;
+    color: var(--blue-color);
+    transition: .3s;
+    top: 13px;
+    left: 12px;
+    transform: rotate(180deg);
+}
+
+.container .main-content .widgets ul li input:checked+label::after {
+    font-size: 23px;
+    left: 1px;
+    transform: rotate(0deg);
+    top: -1px;
+}
+
+/* End Widgets */
+/* Start Backup */
+.container .main-content .backup ul:first-of-type {
+    border-bottom: 1px solid #eee;
+}
+
+.container .main-content .backup ul li input {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.container .main-content .backup ul:first-of-type li label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid var(--grey-color);
+    transition: .3s;
+}
+
+.container .main-content .backup ul:first-of-type li input:checked+label::before {
+    border: 2px solid var(--blue-color);
+}
+
+.container .main-content .backup ul:first-of-type li label::after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--blue-color);
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    transition: .3s;
+    transform: scale(0);
+}
+
+.container .main-content .backup ul:first-of-type li input:checked+label::after {
+    transform: scale(1);
+
+}
+
+.container .main-content .backup ul:last-of-type li label {
+    border: 2px solid var(--grey-color);
+    height: 80px;
+}
+
+.container .main-content .backup ul:last-of-type li input:checked+label {
+    border: 2px solid var(--blue-color);
+    color: var(--blue-color);
+}
+
+/* End Backup */
+/* End Settings Content */
